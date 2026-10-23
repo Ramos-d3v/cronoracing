@@ -16,6 +16,7 @@ pool.connect()
 
 
 app.get('/', (req, res) => {
+  logger.info('Rota raiz acessada');
   res.send('Api esta rodando na porta ' + process.env.PORT);
 });
 
